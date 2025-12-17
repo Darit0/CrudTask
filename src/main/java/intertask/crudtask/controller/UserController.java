@@ -31,7 +31,6 @@ public class UserController {
         response.put("success", true);
         response.put("count", users.size());
         response.put("data", users);
-        response.put("message", "List of all users retrieved successfully");
 
         return ResponseEntity.ok(response);
     }
@@ -53,7 +52,7 @@ public class UserController {
                     "field", field,
                     "direction", direction
             ));
-            response.put("message", "Users sorted by " + field + " in " + direction + " order");
+
 
             return ResponseEntity.ok(response);
 
